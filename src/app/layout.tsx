@@ -1,4 +1,5 @@
 import Navigation from "@/components/navigation";
+import Overlay from "@/components/navigation/overlay";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Public_Sans } from "next/font/google";
 import "./globals.css";
@@ -32,12 +33,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${publicSans.className} ${geistSans.variable} ${geistMono.variable} antialiased min-h-svh text-lg bg-slate-500 flex flex-col overflow-hidden`}
+        className={`${publicSans.className} ${geistSans.variable} ${geistMono.variable} bg-neutral-white antialiased min-h-svh text-lg flex flex-col overflow-hidden relative`}
       >
         <Navigation />
         <main className="flex flex-col flex-grow overflow-y-auto h-0 min-h-0">
           {children}
         </main>
+        <Overlay />
       </body>
     </html>
   );

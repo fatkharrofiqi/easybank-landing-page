@@ -4,7 +4,6 @@ const Page = () => {
   return (
     <>
       <Home />
-      {/* <Home /> */}
     </>
   );
 };

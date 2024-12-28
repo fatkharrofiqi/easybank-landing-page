@@ -1,3 +1,5 @@
+import ButtonInvite from "../button/button-invite";
+
 const Home = () => {
   return (
     <section className="bg-neutral-white text-primary-dark-blue relative flex flex-col gap-5 pb-20 min-h-[calc(100vh-4.125rem)]">
@@ -17,9 +19,7 @@ const Home = () => {
       </div>
 
       <div className="flex justify-center items-center">
-        <button className="bg-gradient-to-l from-primary-bright-cyan to-primary-lime-green py-3 px-8 text-white rounded-full hover:opacity-90 hover:shadow-md transition duration-200">
-          Request Invite
-        </button>
+        <ButtonInvite />
       </div>
     </section>
   );
