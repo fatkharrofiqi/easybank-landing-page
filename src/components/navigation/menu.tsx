@@ -36,7 +36,7 @@ interface MenuProps {
 const Menu = ({ className }: MenuProps) => {
   return (
     <ul
-      className={twMerge("gap-4 p-6 text-xl text-primary-dark-blue", className)}
+      className={twMerge("gap-4 p-4 text-xl text-primary-dark-blue", className)}
     >
       {links.map((menu) => (
         <li key={menu.link}>
