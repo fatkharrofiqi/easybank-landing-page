@@ -28,5 +28,7 @@
   },
   "[typescript]": {
     "editor.defaultFormatter": "biomejs.biome"
-  }
+  },
+  "discord.enabled": true,
+  "discord.removeRemoteRepository": true
 }

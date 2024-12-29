@@ -12,9 +12,9 @@ const Navigation = () => {
   const { open, toggleNavigation } = useNavStore();
 
   return (
-    <header className="shadow-md z-20 relative bg-neutral-white">
+    <header className="shadow-sm z-20 relative bg-neutral-white">
       <nav className="container mx-auto">
-        <div className="relative flex justify-between items-center p-[1.0625rem] z-30">
+        <div className="relative flex justify-between items-center p-[1.0625rem] lg:p-0 z-30">
           {/* Logo */}
           <Logo />
 
@@ -26,7 +26,7 @@ const Navigation = () => {
           />
 
           {/* Menu Web */}
-          <Menu className="hidden lg:flex lg:p-4" />
+          <Menu className="hidden lg:flex lg:h-20 lg:justify-center lg:items-center lg:p-0" />
 
           <div className="hidden lg:flex justify-center items-center">
             <ButtonInvite />

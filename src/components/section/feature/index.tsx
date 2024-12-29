@@ -44,15 +44,15 @@ const Feature = () => {
     <section className="bg-neutral-light-grayish-blue text-primary-dark-blue text-center md:text-left">
       <div className="container flex flex-col gap-16 mx-auto py-20 px-6">
         {/* Featured intro */}
-        <div className="flex flex-col gap-6 md:gap-8 md:max-w-[60%]">
+        <div className="flex flex-col gap-6 md:gap-8 md:max-w-[50%]">
           <h2 className="font-[300] text-3xl">Why choose Easybank?</h2>
-          <p className="text-neutral-grayish-blue text-[0.875rem] md:text-[1.125rem] leading-normal">
+          <p className="text-neutral-grayish-blue text-[0.875rem] md:text-base leading-normal">
             We leverage Open Banking to turn your bank account into your
             financial hub. Control your finances like never before.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {list.map((feature) => (
             <Card
               key={feature.title}

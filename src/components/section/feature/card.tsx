@@ -13,7 +13,7 @@ const Card = ({ image: Image, title, description }: CardProps) => {
       <h3 className="font-[300] leading-[1.15] text-primary-dark-blue text-[1.25rem]">
         {title}
       </h3>
-      <p className="text-neutral-grayish-blue text-[0.875rem] md:text-[1.125rem] leading-normal">
+      <p className="text-neutral-grayish-blue text-[0.875rem] md:text-base leading-normal">
         {description}
       </p>
     </div>

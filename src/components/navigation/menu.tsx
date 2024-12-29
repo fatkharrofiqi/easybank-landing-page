@@ -39,13 +39,11 @@ const Menu = ({ className }: MenuProps) => {
       className={twMerge("gap-4 p-4 text-xl text-primary-dark-blue", className)}
     >
       {links.map((menu) => (
-        <li key={menu.link}>
-          <Link
-            href={menu.link}
-            className="relative p-1 before:absolute before:inset-x-0 before:bottom-0 before:h-[2px] before:bg-gradient-to-r before:from-primary-lime-green before:to-primary-bright-cyan before:origin-left before:transition before:duration-300 before:mx-2 before:scale-x-0 before:hover:scale-x-100"
-          >
-            {menu.name}
-          </Link>
+        <li
+          key={menu.link}
+          className="h-full flex justify-center items-center relative p-1 before:absolute before:inset-x-0 before:bottom-0 before:h-1 before:bg-gradient-to-r before:from-primary-lime-green before:to-primary-bright-cyan before:origin-left before:transition before:duration-300 before:mx-2 before:scale-x-0 before:hover:scale-x-100"
+        >
+          <Link href={menu.link}>{menu.name}</Link>
         </li>
       ))}
     </ul>

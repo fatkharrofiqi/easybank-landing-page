@@ -36,7 +36,7 @@ export default function RootLayout({
         className={`${publicSans.className} ${geistSans.variable} ${geistMono.variable} bg-neutral-white antialiased min-h-svh text-lg flex flex-col overflow-hidden relative`}
       >
         <Navigation />
-        <main className="flex flex-col flex-grow overflow-y-auto h-0 min-h-0">
+        <main className="flex flex-col flex-grow overflow-y-auto h-0 min-h-0 overflow-x-hidden">
           {children}
         </main>
         <Overlay />
