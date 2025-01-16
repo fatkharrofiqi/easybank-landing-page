@@ -17,21 +17,22 @@ const ToggleButton = ({ isOpen, toggleOpen, className }: ToggleButtonProps) => {
         "relative flex size-8 text-primary-dark-blue items-center justify-center transition-transform duration-300",
         className,
       )}
+      aria-label="Toggle menu"
     >
-      <div
+      <span
         className={`absolute inset-0 flex items-center justify-center transition duration-300 ${
           isOpen ? "scale-0" : "scale-100"
         }`}
       >
         <Menu size={32} />
-      </div>
-      <div
+      </span>
+      <span
         className={`absolute inset-0 flex items-center justify-center transition duration-300 ${
           isOpen ? "scale-100" : "scale-0"
         }`}
       >
         <X size={32} />
-      </div>
+      </span>
     </button>
   );
 };
