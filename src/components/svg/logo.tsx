@@ -10,7 +10,7 @@ const Logo: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
       {...props} // Pass additional props dynamically
     >
       <defs>
-        <linearGradient id="a" x1="72.195%" x2="17.503%" y1="0%" y2="100%">
+        <linearGradient x1="72.195%" x2="17.503%" y1="0%" y2="100%">
           <stop offset="0%" stopColor="#33D35E" />
           <stop offset="100%" stopColor="#2AB6D9" />
         </linearGradient>

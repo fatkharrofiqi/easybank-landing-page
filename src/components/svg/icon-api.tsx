@@ -10,7 +10,7 @@ const IconApi: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
       {...props} // Spread any additional props
     >
       <defs>
-        <linearGradient id="a" x1="0%" x2="99.58%" y1="0%" y2="99.58%">
+        <linearGradient x1="0%" x2="99.58%" y1="0%" y2="99.58%">
           <stop offset="0%" stopColor="#33D35E" />
           <stop offset="100%" stopColor="#2AB6D9" />
         </linearGradient>
